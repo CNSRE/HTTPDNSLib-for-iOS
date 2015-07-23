@@ -20,4 +20,5 @@ class DNSCache{
     init(){
     
     }
+    
 }
