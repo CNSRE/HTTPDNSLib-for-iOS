@@ -26,12 +26,6 @@
 		08BB73C31B5E70420059CF3E /* DNSCache */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DNSCache; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BB73C61B5E70420059CF3E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		08BB73D01B5E72BE0059CF3E /* dnscache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dnscache; sourceTree = "<group>"; };
-		08BB73D11B5E73010059CF3E /* cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cache; sourceTree = "<group>"; };
-		08BB73D21B5E73010059CF3E /* httpdns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = httpdns; sourceTree = "<group>"; };
-		08BB73D31B5E73010059CF3E /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
-		08BB73D41B5E73010059CF3E /* query */ = {isa = PBXFileReference; lastKnownFileType = folder; path = query; sourceTree = "<group>"; };
-		08BB73D51B5E73010059CF3E /* score */ = {isa = PBXFileReference; lastKnownFileType = folder; path = score; sourceTree = "<group>"; };
-		08BB73D61B5E73010059CF3E /* speedtest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = speedtest; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +58,6 @@
 		08BB73C51B5E70420059CF3E /* DNSCache */ = {
 			isa = PBXGroup;
 			children = (
-				08BB73D11B5E73010059CF3E /* cache */,
-				08BB73D21B5E73010059CF3E /* httpdns */,
-				08BB73D31B5E73010059CF3E /* model */,
-				08BB73D41B5E73010059CF3E /* query */,
-				08BB73D51B5E73010059CF3E /* score */,
-				08BB73D61B5E73010059CF3E /* speedtest */,
 				08BB73D01B5E72BE0059CF3E /* dnscache */,
 				08BB73C61B5E70420059CF3E /* main.swift */,
 			);
@@ -250,6 +238,7 @@
 				08BB73CC1B5E70420059CF3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

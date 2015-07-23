@@ -4,7 +4,7 @@
 * 类名称: HttpDnsPack
 * 类描述: 将httpdns返回的数据封装一层，方便日后httpdns接口改动不影响数据库模型。 并且该接口还会标识httpdns错误之后的一些信息用来上报
 * 创建人: fenglei
-* 创建时间: 2015-3-30 上午11:20:11
+* 创建时间: 2015-7-23 上午11:20:11
 *
 * 修改人:
 * 修改时间:
@@ -53,13 +53,13 @@ class HttpDnsPack{
         str += "device_ip:" + device_ip + "\n"
         str += "device_sp:" + device_sp + "\n"
         
-//        if( dns != null ){
-//            str += "-------------------\n"
-//            for i {
-//                str += "dns[" + i + "]:" + dns[i] + "\n"
-//            }
-//            str += "-------------------\n"
-//        }
+        if let arr = dns {
+            str += "-------------------\n"
+            for ip in arr {
+                str += "A记录IP:" + ip + "\n"
+            }
+            str += "-------------------\n"
+        }
         
         return str
     

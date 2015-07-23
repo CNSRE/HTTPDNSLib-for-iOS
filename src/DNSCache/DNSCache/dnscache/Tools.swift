@@ -1,8 +1,8 @@
 /**
 *
 * 项目名称: DNSCache <br>
-* 类名称: DNSCache <br>
-* 类描述: Lib库全局 对外实例对象 <br>
+* 类名称: Tools <br>
+* 类描述: 一些常用的小方法 <br>
 * 创建人: fenglei <br>
 * 创建时间: 2015-7-23 下午5:26:04 <br>
 *
@@ -15,9 +15,6 @@
 
 import Foundation
 
-class DNSCache{
+class Tools{
 
-    init(){
-    
-    }
 }

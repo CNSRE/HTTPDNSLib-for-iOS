@@ -108,6 +108,7 @@ class IpModel {
     
     
     func toString()->String{
+        
         var str = "*\n"
         str += "-- 服务器id = " + id + "\n"
         str += "-- 服务器ip = " + ip + "\n"
@@ -122,6 +123,7 @@ class IpModel {
         str += "-- 最后一次访问成功时间 = " + Tools.getStringDateShort(finally_success_time) + "\n"
         str += "-- 系统对服务器的评分 = " + grade + "\n"
         str += "\n"
+        
         return str
     }
 
