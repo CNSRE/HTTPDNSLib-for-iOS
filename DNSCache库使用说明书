@@ -9,7 +9,7 @@ DNSCache库使用说明书
 设置AppKey和版本，用于请求对应版本的配置参数
 [WBDNSCache setAppkey:@"ed3e6e90975f52876cd9d74a8e9e05d8" version:@"0.1"];
 设置配置参数服务器的URL
-[WBDNSCache setConfigServerUrl:@"http://202.108.7.153/config"];
+[WBDNSCache setConfigServerUrl:@"http://api.weibo.cn/2/httpdns/config"];
 初始化库，期间会从参数服务器请求配置参数
 [[WBDNSCache sharedInstance] initialize];
 
