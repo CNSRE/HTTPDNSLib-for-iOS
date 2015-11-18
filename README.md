@@ -1,8 +1,10 @@
 # HTTPDNSLib-for-iOS
 DNSCache库使用说明书
+
 1. 导入LibDnsCache.a, WBDNSCache.h. (如果愿意，也可以将DNSCache整个工程导入)
 
 2. 在Targets－》Build Phases－》LinkBinaryWithLibraries 加入libDNSCache.a
+
 3. 确定Targets－》BuildingSetting－》SearchPaths－》Library Search Path 可以搜索到正确的库文件。
 注意，库分为模拟器版本和真机版本，请确定自己导入的是正确的版本，或者库路径查找 能首先查到正确的版本，有时候能找到两个版本，系统会已第一个找到的版本为准，导致link错误。
 
@@ -14,14 +16,12 @@ DNSCache库使用说明书
 初始化库，期间会从参数服务器请求配置参数
 [[WBDNSCache sharedInstance] initialize];
 
-
 5.建议初始化后延时调用 预请求域名对应IP，提前从服务器拉取域名对应IP
 [[WBDNSCache sharedInstance]preloadDomains:@[@"http://ww4.sinaimg.cn", @"http://api.weibo.cn/"]];
 
 6.然后就可以在任何地方调用
 [[WBDNSCache sharedInstance] getDomainServerIpFromURL:url]
 获取转换后Url 和 需要设置的host值。
-
 这个函数拿到的是一个WBDNSDomainInfo 对象数组，一般来说 取第一个就可以了。
 WBDNSDomainInfo.id 暂时没用。
 WBDNSDomainInfo.url 已经替换好的URL， 客户端可以直接用它 请求资源。
