@@ -3,13 +3,14 @@ DNSCache库使用说明书
 
 1. 导入LibDnsCache.a, WBDNSCache.h. (如果愿意，也可以将DNSCache整个工程导入)
 
-2. 在Targets－》Build Phases－》LinkBinaryWithLibraries 加入libDNSCache.a
+2. 在Targets－》Build Phases－》LinkBinaryWithLibraries 加入libDNSCache.a.  httpDNSLib依赖libsqlite3.dylib, SystemConfiguration.framework, CoreTelephony.framework. 请同时加入以上依赖库。
 
 3. 确定Targets－》BuildingSetting－》SearchPaths－》Library Search Path 可以搜索到正确的库文件。
 注意，库分为模拟器版本和真机版本，请确定自己导入的是正确的版本，或者库路径查找 能首先查到正确的版本，有时候能找到两个版本，系统会已第一个找到的版本为准，导致link错误。
 
 4。建议在AppDelegate里（也就是尽可能早的时候）初始化 WBDNSCache库。
 设置AppKey和版本，用于请求对应版本的配置参数
+以下只是一个示例，如果需要从sina服务器拉取配置，需要申请自己的AppKey，否则请手动修改代码获取自己的配置。
 [WBDNSCache setAppkey:@"ed3e6e90975f52876cd9d74a8e9e05d8" version:@"0.1"];
 设置配置参数服务器的URL
 [WBDNSCache setConfigServerUrl:@"http://api.weibo.cn/2/httpdns/config"];
