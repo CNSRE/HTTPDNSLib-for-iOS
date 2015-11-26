@@ -22,8 +22,8 @@
     dispatch_queue_t _serverUrlOperationQueue;
 }
 
-static NSString* WBDNSCacheConfigServerUrl = @"http://10.13.131.236/2/httpdns/config";
-static NSString* WBDNSCacheLogServerUrl = @"http://api.weibo.cn/2/httpdns/logs/add";
+static NSString* WBDNSCacheConfigServerUrl = @"";
+static NSString* WBDNSCacheLogServerUrl = @"";
 static NSString* WBDNS_APPKEY = @"";
 static NSString* WBDNS_APP_VERSION = @"";
 
