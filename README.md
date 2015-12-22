@@ -1,6 +1,8 @@
 # HTTPDNSLib-for-iOS
 DNSCache库使用说明书
 
+目前我们的服务器还不能支持所有的域名，所以代码里有白名单来限制域名。现在还不建议大家用在商用项目里，仅做学习交流用。
+
 1. 导入LibDnsCache.a, WBDNSCache.h. (如果愿意，也可以将DNSCache整个工程导入)
 
 2. 在Targets－》Build Phases－》LinkBinaryWithLibraries 加入libDNSCache.a.  httpDNSLib依赖libsqlite3.dylib, SystemConfiguration.framework, CoreTelephony.framework. 请同时加入以上依赖库。
